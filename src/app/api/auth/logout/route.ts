@@ -30,7 +30,7 @@ export async function POST(request: Request) {
             status: 200,
             headers: {
                 // Xoá cookie sessionToken
-                'Set-Cookie' : `sessionToken=; Path=/; HttpOnly`
+                'Set-Cookie' : `sessionToken=; Path=/; HttpOnly; Max-Age=0`
             }
         })
     } catch (error) {
